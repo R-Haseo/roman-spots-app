@@ -1,0 +1,16 @@
+{
+    "name": "RomanSpots.Application",
+    "rootNamespace": "",
+    "references": [
+        "GUID:df0b0a38c6444a744a0a3f2c2ff44507"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

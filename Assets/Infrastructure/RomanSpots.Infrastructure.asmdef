@@ -1,0 +1,17 @@
+{
+    "name": "RomanSpots.Infrastructure",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c763431c2be947e498a6c9de12588c7d",
+        "GUID:df0b0a38c6444a744a0a3f2c2ff44507"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
