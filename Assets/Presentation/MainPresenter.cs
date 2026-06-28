@@ -16,7 +16,7 @@ namespace RomanSpots.Presentation
         {
             foreach (var spot in _repository.GetAll())
             {
-                Debug.Log(spot.Name);
+                Debug.Log($"{spot.Name} / {spot.Prefecture} / {spot.Category}");
             }
         }
     }
