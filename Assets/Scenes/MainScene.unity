@@ -658,6 +658,7 @@ MonoBehaviour:
     TypeName: 
   autoRun: 1
   autoInjectGameObjects: []
+  _mainView: {fileID: 1715508903}
 --- !u!1 &775175326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1036,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1715508901}
+  - component: {fileID: 1715508903}
   m_Layer: 5
   m_Name: MainView
   m_TagString: Untagged
@@ -1063,6 +1065,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1715508903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715508900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3283a011b6a6948949acace7828883, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RomanSpots.Presentation::RomanSpots.Presentation.MainView
+  _contentRoot: {fileID: 1392042065}
+  _spotItemPrefab: {fileID: 7150571237294512308, guid: 855c8139a425cfc4abff75d53138f81b, type: 3}
 --- !u!1 &1883291497
 GameObject:
   m_ObjectHideFlags: 0
