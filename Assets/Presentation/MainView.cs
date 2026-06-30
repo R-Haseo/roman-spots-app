@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using RomanSpots.Domain;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace RomanSpots.Presentation
         [SerializeField] private Transform _contentRoot;
         [SerializeField] private SpotItemView _spotItemPrefab;
 
-        public void ShowSpots(IReadOnlyList<Spot> spots)
+        public void ShowSpots(IReadOnlyList<Spot> spots, Action<Spot> onSpotClicked)
         {
             foreach (Transform child in _contentRoot)
             {
@@ -19,7 +20,7 @@ namespace RomanSpots.Presentation
             foreach (var spot in spots)
             {
                 var item = Instantiate(_spotItemPrefab, _contentRoot);
-                item.SetData(spot);
+                item.SetData(spot, onSpotClicked);
             }
         }
     }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using RomanSpots.Domain;
 using RomanSpots.Application;
 
 namespace RomanSpots.Presentation
@@ -18,7 +19,12 @@ namespace RomanSpots.Presentation
         {
             var spots = _repository.GetAll();
 
-            _mainView.ShowSpots(spots);
+            _mainView.ShowSpots(spots, OnSpotClicked);
+        }
+
+        private void OnSpotClicked(Spot spot)
+        {
+            Debug.Log(spot.Name);
         }
     }
 }
