@@ -24,7 +24,7 @@ namespace RomanSpots.Presentation
 
         private void OnSpotClicked(Spot spot)
         {
-            Debug.Log(spot.Name);
+            _mainView.ShowDetail(spot);
         }
     }
 }
