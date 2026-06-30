@@ -12,6 +12,11 @@ namespace RomanSpots.Presentation
         [SerializeField] private Transform _contentRoot;
         [SerializeField] private SpotItemView _spotItemPrefab;
 
+        private void Awake()
+        {
+            _detailView.Initialize(ShowList);
+        }
+
         public void ShowSpots(IReadOnlyList<Spot> spots, Action<Spot> onSpotClicked)
         {
             ClearSpotItems();

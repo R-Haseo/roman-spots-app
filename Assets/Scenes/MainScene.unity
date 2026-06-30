@@ -572,6 +572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: RomanSpots.Presentation::DetailView
   _nameText: {fileID: 272595229}
   _infoText: {fileID: 224106474}
+  _backButton: {fileID: 672539027}
 --- !u!1 &449254859
 GameObject:
   m_ObjectHideFlags: 0
