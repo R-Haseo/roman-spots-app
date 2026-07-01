@@ -4,19 +4,22 @@
       "id": "nagoya-daibutsu",
       "name": "名古屋大仏",
       "prefecture": "名古屋",
-      "category": "巨大仏"
+      "category": "巨大仏",
+      "description": "名古屋市内にある巨大な大仏。都市部にありながら落ち着いた雰囲気で参拝できる。"
     },
     {
       "id": "takasaki-kannon",
       "name": "高崎白衣大観音",
       "prefecture": "群馬県",
-      "category": "巨大仏"
+      "category": "巨大仏",
+      "description": "高さ約41.8mの白衣観音。胎内を登ることができ、高崎市街を一望できる代表的な観光スポット。"
     },
     {
       "id": "soka-warehouse",
       "name": "ウェアハウス草加店",
       "prefecture": "埼玉県",
-      "category": "珍スポット"
+      "category": "珍スポット",
+      "description": "洞窟風の装飾や巨大モアイなど、テーマパークのような内装で知られたゲームセンター。"
     }
   ]
 }

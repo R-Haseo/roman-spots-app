@@ -33,7 +33,7 @@ namespace RomanSpots.Infrastructure
             }
 
             return dto.Spots
-                .Select(x => new Spot(x.Id, x.Name, x.Prefecture, x.Category))
+                .Select(x => new Spot(x.Id, x.Name, x.Prefecture, x.Category, x.Description))
                 .ToList();
         }
     }

@@ -25,7 +25,10 @@ namespace RomanSpots.Presentation
         public void SetData(Spot spot)
         {
             _nameText.text = spot.Name;
-            _infoText.text = $"{spot.Prefecture} / {spot.Category}";
+            _infoText.text =
+                $"{spot.Prefecture}\n" +
+                $"{spot.Category}\n\n" +
+                $"{spot.Description}";
         }
     }
 }
