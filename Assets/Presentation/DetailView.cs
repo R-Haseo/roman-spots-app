@@ -28,7 +28,10 @@ namespace RomanSpots.Presentation
             _infoText.text =
                 $"{spot.Prefecture}\n" +
                 $"{spot.Category}\n\n" +
-                $"{spot.Description}";
+                $"{spot.Description}\n\n" +
+                $"{spot.ImageAddress}\n\n" +
+                $"{spot.MapUrl}\n\n" +
+                $"{spot.ReferenceUrl}";
         }
     }
 }
