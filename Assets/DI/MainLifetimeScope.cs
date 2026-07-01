@@ -1,3 +1,4 @@
+using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 using RomanSpots.Application;
@@ -8,8 +9,13 @@ namespace RomanSpots.DI
 {
     public sealed class MainLifetimeScope : LifetimeScope
     {
+        [SerializeField] private MainView _mainView;
+
         protected override void Configure(IContainerBuilder builder)
         {
+            // views
+            builder.RegisterComponent(_mainView);
+
             // Repositories
             builder.Register<ISpotRepository, JsonSpotRepository>(Lifetime.Singleton);
             

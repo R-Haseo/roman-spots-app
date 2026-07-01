@@ -1,23 +1,30 @@
 using UnityEngine;
+using RomanSpots.Domain;
 using RomanSpots.Application;
 
 namespace RomanSpots.Presentation
 {
     public sealed class MainPresenter
     {
+        private readonly MainView _mainView;
         private readonly ISpotRepository _repository;
 
-        public MainPresenter(ISpotRepository repository)
+        public MainPresenter(MainView mainView, ISpotRepository repository)
         {
+            _mainView = mainView;
             _repository = repository;
         }
 
         public void Initialize()
         {
-            foreach (var spot in _repository.GetAll())
-            {
-                Debug.Log($"{spot.Name} / {spot.Prefecture} / {spot.Category}");
-            }
+            var spots = _repository.GetAll();
+
+            _mainView.ShowSpots(spots, OnSpotClicked);
+        }
+
+        private void OnSpotClicked(Spot spot)
+        {
+            _mainView.ShowDetail(spot);
         }
     }
 }
